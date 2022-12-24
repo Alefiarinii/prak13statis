@@ -1,0 +1,21 @@
+dataku_arini = read.delim("clipboard")
+View(dataku_arini)
+wilcox.test(dataku_arini$Sebelum,dataku_arini$Setelah,paired=TRUE)
+dataku_arini = read.delim("clipboard")
+View(dataku_arini)
+wilcox.test(dataku_arini$Sebelum,dataku_arini$Setelah,paired=TRUE)
+df_arini=read.delim("clipboard")
+# independent 2-group Mann-Whitney U Test
+wilcox.test(df_arini$obat~df_arini$grup)
+# where y is numeric and A is A binary factor
+head(df_arini)
+rank(df_arini$obat)
+dataku_arini = read.delim("clipboard")
+View(dataku_arini)
+wilcox.test(dataku_arini$Ganjil,dataku_arini$Genap, paired=TRUE)
+#lat 3.2
+df_arini = read.delim("clipboard")
+wilcox.test(df_arini$caffeine, df_arini$placebo)
+#independent 2-group Mann-Whitney U Test
+head(df_arini)
+rank(df_arini$placebo)
